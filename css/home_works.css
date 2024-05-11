@@ -7,8 +7,7 @@
 }
 
 .inner_gmail_block {
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 50px auto 0;
     display: flex;
     justify-content: space-evenly;
     border: 1px solid rgb(250, 172, 28);
@@ -101,8 +100,9 @@
 
 .stopwatch {
     padding: 100px 0;
-    background-image: url(../Images/tlou.webp);
+    background:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.69)) top,url(../Images/tlou.webp);
     background-size: cover;
+
 }
 
 .time_buttons {
