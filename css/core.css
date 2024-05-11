@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -120,6 +119,6 @@ input {
 }
 
 :root {
-    --orange: orange;
+    --orange: rgb(255, 165, 0);
     --black: black;
 }
