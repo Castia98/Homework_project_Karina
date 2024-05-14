@@ -99,8 +99,8 @@
 }
 
 .stopwatch {
-    padding: 100px 0;
-    background:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.69)) top,url(../Images/tlou.webp);
+    padding: 260px 0;
+    background: url(../Images/tlou.webp);
     background-size: cover;
 
 }

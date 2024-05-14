@@ -90,3 +90,4 @@ document.addEventListener("DOMContentLoaded", function() {
     stopButton.onclick = stopTimer;
     resetButton.onclick = resetTimer;
 });
+

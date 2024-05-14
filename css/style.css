@@ -74,7 +74,7 @@
 /* FOOTER */
 
 .footer {
-    background: #2c2d2f;
+    background: black;
     width: 100%;
 }
 
@@ -247,7 +247,7 @@
     border: 8px solid transparent;
     animation: animate 5s linear infinite;
     transform-origin: bottom center;
-    animation-play-state: run;
+    animation-play-state: running;
 }
 
 @keyframes animate {
