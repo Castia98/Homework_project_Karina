@@ -108,3 +108,40 @@ converter(eurInput,somInput, usdInput)
 // DRY - don't repeat yourself
 // KISS - keep it simple stupid
 // SOLID
+
+// CARD SWITCHER======================================================================================================
+
+const card = document.querySelector('.card');
+const btnNext = document.querySelector('#btn-next');
+const btnPrev = document.querySelector('#btn-prev');
+let cardId = 1;
+const loadCard = (id) => {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        .then(response => response.json())
+        .then(data => {
+            const { id, title, completed } = data;
+            card.style.borderColor = completed ? 'green' : 'red';
+            card.innerHTML = `
+                <p>${title}</p>
+                <p style="color: ${completed ? 'green' : 'red'}">${completed}</p>
+                <span>${id}</span>
+            `;
+        })
+};
+
+btnNext.onclick = () => {
+    cardId = cardId < 200 ? cardId +1 : 1;
+    loadCard(cardId);
+};
+
+btnPrev.onclick = () => {
+    cardId = cardId > 1 ? cardId -1 : 200;
+    loadCard(cardId);
+};
+
+loadCard(cardId);
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(data => {
+        console.log('Posts data:', data);
+    });
