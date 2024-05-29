@@ -40,3 +40,28 @@ const showModalAfterDelay = () => {
 
 window.addEventListener('scroll', showModalOnScrollEnd);
 showModalAfterDelay();
+
+//Telegram BOT===========================================================
+
+const form = document.querySelector('form')
+const token ='6427056237:AAHfLngWI9tCCI90kQRJIIW65rhqAch_DyE'
+const chatId = '@casa_artista'
+const URL_API = `https://api.telegram.org/bot${token}/sendMessage`
+
+form.onsubmit = async (event) => {
+    event.preventDefault()
+    const {name, phone} = Object.fromEntries(new FormData(form).entries())
+    const text = `Name: ${name}\nPhone: ${phone}`
+
+    await fetch(URL_API, {
+        method: 'POST',
+        headers:{'Content-type' : 'application/json'},
+        body: JSON.stringify({chat_id: chatId, text})
+    })
+}
+// const formData =new FormData(form)
+// console.log(formData)
+// const object = {
+//     name: "Castian",
+//     number:'123'
+// }

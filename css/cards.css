@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1c02;
+}
+h1 {
+    margin: 150px auto 0;
+
+}
+.cards_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.card {
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(168, 0, 30);
+    background-color: #e8e182;
+    background-image: url('../Images/JE.jpg');
+    background-size: cover;
+    opacity: 0.9;
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    color: #ededed;
+}

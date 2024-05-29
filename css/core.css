@@ -19,7 +19,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     border: 1px solid var(--orange);
-    background: black;
+    background: rgba(0, 0, 0, 0.39);
     color: var(--orange);
     border-radius: 8px;
 }
@@ -119,6 +119,6 @@ input {
 }
 
 :root {
-    --orange: rgb(255, 218, 69);
+    --orange: rgba(255, 218, 69, 0.85);
     --black: black;
 }

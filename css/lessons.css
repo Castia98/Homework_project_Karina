@@ -2,13 +2,15 @@
 /* PHONE CHECKER */
 
 .phone_block {
-    background: black;
+    background-image: url("../Images/elele.jpg");
+    background-size: cover;
     padding: 100px 0;
 }
 
 .inner_phone_block {
     margin-top: 50px;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.39);
     justify-content: space-evenly;
     border: 1px solid var(--orange);
     height: 300px;
@@ -20,11 +22,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
+}
+#phone_input {
+    background-color: transparent;
+}
 .form_phone button {
     width: 100%;
     margin: 20px 0;
+    background-color: transparent;
 }
 
 /* TAB SLIDER */
@@ -44,7 +50,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 170px;
+    height: 270px;
 }
 
 .tab_content_block p {
@@ -127,10 +133,16 @@
 
 
 .converter {
-    padding: 100px 0;
-    background-color: black;
+    padding: 150px 0;
+    background-image: url("../Images/elya.jpeg");
+    background-size: cover;
 }
-
+#som,#usd,#eur {
+    background-color: rgba(0, 0, 0, 0.22);
+}
+.converter h3 {
+    color: rgb(217, 185, 49);
+}
 .inner_converter {
     display: flex;
     align-items: center;
@@ -148,8 +160,9 @@
 /*------WEATHER------*/
 
 .weather {
-    padding: 100px 0;
-    background-color: black;
+    padding: 270px 0;
+    background-image: url("../Images/eytan-zana-wlf-checkpoint.jpg");
+    background-size: cover;
 }
 
 .inner_weather > div {
@@ -160,7 +173,9 @@
     color: white;
     font-size: 25px;
 }
-
+.cityName {
+    background-color: rgba(0, 0, 0, 0.29);
+}
 .inner_weather {
     display: flex;
     flex-direction: column;
